@@ -1,28 +1,28 @@
 export default function Services() {
   const services = [
     {
-      name: "Coordinación de meseros",
-      desc: "Equipo profesional y uniformado que atiende a tus invitados con protocolo de primer nivel.",
+      name: "Servicio de meseros",
+      desc: "Personal profesional y uniformado que atiende a tus invitados con protocolo de primer nivel.",
     },
     {
-      name: "Eventos corporativos",
-      desc: "Logística integral para convenciones, cenas de empresa y activaciones de marca.",
+      name: "Servicio de barra",
+      desc: "Bartenders y barra montada para que las bebidas nunca falten en tu evento.",
     },
     {
-      name: "Bodas",
-      desc: "Servicio impecable para tu día especial: montaje, servicio de mesa y coordinación total.",
+      name: "Coctelería",
+      desc: "Cócteles de autor y clásicos preparados al momento para sorprender a tus invitados.",
     },
     {
-      name: "Banquetes de alta categoría",
-      desc: "Meseros capacitados para banquetes formales y cenas de gala de gran escala.",
+      name: "Banquetera",
+      desc: "Coordinación completa de banquete: montaje, servicio de mesa y logística integral.",
+    },
+    {
+      name: "Buffets por tiempos",
+      desc: "Servicio de buffet organizado por tiempos, fluido y cuidado en cada detalle.",
     },
     {
       name: "Montaje y protocolo",
-      desc: "Montaje de mesas, mise en place y protocolo de servicio cuidado al detalle.",
-    },
-    {
-      name: "Personal capacitado",
-      desc: "Capitanes, meseros y garroteros con experiencia comprobada en hospitalidad.",
+      desc: "Montaje de mesas, mise en place y protocolo de servicio para eventos formales.",
     },
   ];
 
@@ -32,7 +32,7 @@ export default function Services() {
         Lo que hacemos
       </div>
       <h2 className="font-system-pro text-3xl md:text-[2rem] font-semibold tracking-tight text-sdc-cream mb-4">
-        Servicio
+        Nuestros servicios
       </h2>
       <p className="font-system-pro text-[14px] md:text-[15px] leading-relaxed text-sdc-muted max-w-[520px] mb-12 tracking-wide">
         Coordinamos cada detalle para que tu evento fluya a la perfección, con personal de alto nivel.
@@ -42,8 +42,9 @@ export default function Services() {
         {services.map((service, index) => (
           <div
             key={index}
-            className="bg-[#0f0d08] border border-[rgba(250,248,244,0.06)] rounded-xl p-7 transition-colors duration-300 hover:border-[rgba(201,168,76,0.35)] group"
+            className="relative bg-[#0f0d08] border border-[rgba(250,248,244,0.06)] rounded-xl p-7 pl-8 overflow-hidden transition-colors duration-300 hover:border-[rgba(201,168,76,0.35)] group"
           >
+            <span className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-sdc-gold/70 to-sdc-wine/70" aria-hidden />
             <div className="font-system-pro text-[12px] font-semibold tracking-[0.2em] text-sdc-gold-soft/80 mb-4">
               {String(index + 1).padStart(2, "0")}
             </div>

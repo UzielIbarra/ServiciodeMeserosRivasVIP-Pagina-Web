@@ -34,10 +34,10 @@ export default function Navbar() {
           Servicio
         </a>
         <a
-          href="#clientes"
+          href="#equipo"
           className="text-[15px] lg:text-[16px] font-semibold tracking-[0.14em] uppercase text-sdc-muted transition-colors duration-300 whitespace-nowrap hover:text-sdc-gold-soft"
         >
-          Nuestros clientes
+          Equipo
         </a>
         <a
           href="#nosotros"
