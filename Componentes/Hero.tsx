@@ -46,14 +46,14 @@ export default function Hero() {
               className="font-system-pro text-[11px] md:text-[12px] font-semibold tracking-[0.26em] text-sdc-gold/90 uppercase mb-5 animate-fade-up drop-shadow-[0_1px_3px_rgba(0,0,0,0.85)]"
               style={{ animationDelay: "0ms" }}
             >
-              Dr. Chrystian Mejía · Guadalajara
+              Servicio de Meseros Rivas VIP · Guadalajara
             </div>
 
             <h1
               className="font-system-pro text-4xl md:text-5xl font-semibold tracking-tight text-sdc-cream leading-[1.15] mb-5 animate-fade-up drop-shadow-[0_2px_14px_rgba(0,0,0,0.78)]"
               style={{ animationDelay: "100ms" }}
             >
-              Tu sonrisa es<br />
+              Tu evento es<br />
               <span className="text-sdc-gold-soft font-medium">nuestra obra</span>
             </h1>
 
@@ -61,7 +61,7 @@ export default function Hero() {
               className="font-system-pro text-[15px] md:text-[16px] text-sdc-body/95 leading-[1.6] mb-6 max-w-[400px] animate-fade-up tracking-wide"
               style={{ animationDelay: "200ms" }}
             >
-              Odontología estética de alto nivel. Transformaciones reales de nuestros pacientes.
+              Coordinación de meseros y logística de alto nivel para eventos corporativos, bodas y banquetes de alta categoría.
             </p>
 
             <div
@@ -75,7 +75,7 @@ export default function Hero() {
                 className="group inline-flex items-center gap-4 sm:gap-5 md:gap-6"
               >
                 <span className="font-system-pro inline-flex items-center justify-center bg-sdc-gold text-[#0a0a0a] text-[13px] sm:text-[14px] tracking-[0.14em] uppercase py-4 px-8 sm:py-[17px] sm:px-10 rounded-lg font-semibold shadow-[0_6px_22px_rgba(0,0,0,0.38)] transition-colors group-hover:bg-[#dcc174]">
-                  Agendar por WhatsApp
+                  Cotizar Evento
                 </span>
                 <span className="relative flex size-[52px] shrink-0 items-center justify-center sm:size-[58px] md:size-[68px] transition-transform duration-300 group-hover:scale-[1.06]">
                   <Image
@@ -91,7 +91,7 @@ export default function Hero() {
                 type="button"
                 className="font-system-pro bg-[#0e0c09]/75 text-sdc-body border border-sdc-gold/35 text-[14px] md:text-[15px] tracking-[0.14em] uppercase py-3 px-6 rounded-lg transition-colors hover:bg-sdc-gold hover:text-[#0a0a0a] hover:border-sdc-gold backdrop-blur-sm"
               >
-                Ver tratamientos
+                Ver servicios
               </button>
             </div>
           </div>
@@ -105,7 +105,7 @@ export default function Hero() {
             >
               <Image
                 src={`/retrato.png?v=${RETRATO_VER}`}
-                alt="Karely Ruiz, paciente de Smile Design Clinic"
+                alt="Banquete de alta categoría atendido por Servicio de Meseros Rivas VIP"
                 fill
                 className="object-cover object-center"
                 quality={100}
@@ -117,10 +117,10 @@ export default function Hero() {
 
             <div className="font-system-pro rounded-2xl bg-[#070605]/76 backdrop-blur-xl px-6 py-5 shadow-[0_20px_48px_rgba(0,0,0,0.4)] ring-1 ring-[#faf8f4]/[0.07] border border-[rgba(201,168,76,0.11)] text-left space-y-2.5">
               <p className="text-[1.3125rem] sm:text-[1.375rem] md:text-[1.4375rem] font-semibold tracking-[0.04em] text-sdc-cream leading-[1.2] antialiased [text-shadow:0_1px_0_rgba(201,168,76,0.14),0_2px_18px_rgba(0,0,0,0.48)]">
-                Karely Ruiz
+                Banquetes & Bodas
               </p>
               <p className="text-[13px] md:text-[14px] leading-[1.55] font-normal tracking-[0.06em] text-sdc-muted antialiased [text-shadow:0_1px_12px_rgba(0,0,0,0.45)]">
-                Figura pública · Paciente en Smile Design Clinic
+                Eventos corporativos · Coordinados por Rivas VIP
               </p>
             </div>
           </div>
