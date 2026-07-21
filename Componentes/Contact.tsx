@@ -3,15 +3,15 @@ import { WHATSAPP_BOOKING_URL } from "../lib/contact";
 export default function Contact() {
   return (
     <section
-      id="doctor"
+      id="contacto"
       className="bg-[#0a0a0a] border-y border-[rgba(250,248,244,0.06)] px-10 py-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center scroll-mt-[72px]"
     >
       <div className="space-y-4">
         <h2 className="font-system-pro text-3xl md:text-[2rem] font-semibold tracking-tight text-sdc-cream">
-          ¿Listo para tu nueva sonrisa?
+          ¿Listo para tu evento?
         </h2>
         <p className="font-system-pro text-[14px] md:text-[15px] leading-relaxed text-sdc-muted tracking-wide max-w-md">
-          Agenda directamente por WhatsApp. El Dr. Chrystian Mejía o su equipo te atenderán a la brevedad.
+          Contáctanos directamente por WhatsApp y cotiza el servicio de meseros para tu evento. Te respondemos a la brevedad.
         </p>
       </div>
 
@@ -27,7 +27,7 @@ export default function Contact() {
           </div>
           <div>
             <strong className="block text-[14px] md:text-[15px] text-sdc-cream font-semibold tracking-wide">
-              Agendar cita por WhatsApp
+              Contactar por WhatsApp
             </strong>
             <span className="text-[12px] md:text-[13px] text-sdc-muted tracking-wide">
               Respuesta en menos de 24 hrs
@@ -41,23 +41,23 @@ export default function Contact() {
               Guadalajara
             </span>
             <span className="font-system-pro text-[11px] text-sdc-subtle tracking-wide uppercase">
-              Ubicación
+              Cobertura
             </span>
           </div>
           <div className="flex-1 rounded-xl border border-[rgba(250,248,244,0.06)] bg-[#0f0d08] px-3 py-4 text-center">
             <span className="font-system-pro block text-[13px] md:text-[14px] text-sdc-gold-soft font-semibold tracking-wide mb-1">
-              Lun–Sáb
+              Eventos
             </span>
             <span className="font-system-pro text-[11px] text-sdc-subtle tracking-wide uppercase">
-              Atención
+              Bodas · Corp · Banquetes
             </span>
           </div>
           <div className="flex-1 rounded-xl border border-[rgba(250,248,244,0.06)] bg-[#0f0d08] px-3 py-4 text-center">
             <span className="font-system-pro block text-[13px] md:text-[14px] text-sdc-gold-soft font-semibold tracking-wide mb-1">
-              Privada
+              Todo el año
             </span>
             <span className="font-system-pro text-[11px] text-sdc-subtle tracking-wide uppercase">
-              Consulta
+              Disponibilidad
             </span>
           </div>
         </div>

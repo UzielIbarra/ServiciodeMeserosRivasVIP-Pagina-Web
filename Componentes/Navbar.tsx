@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { WHATSAPP_BOOKING_URL } from "../lib/contact";
 
 export default function Navbar() {
   return (
@@ -6,7 +7,7 @@ export default function Navbar() {
       <div className="flex items-center min-w-0">
         <Image
           src="/logo.png"
-          alt="Logo Smile Design"
+          alt="Logo Servicio de Meseros Rivas VIP"
           width={56}
           height={56}
           quality={100}
@@ -17,10 +18,10 @@ export default function Navbar() {
 
         <div className="font-system-pro flex flex-col justify-center leading-tight min-w-0 gap-0.5">
           <span className="text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-medium tracking-[0.2em] uppercase text-sdc-cream">
-            Smile
+            Meseros
           </span>
           <span className="text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-semibold tracking-[0.16em] uppercase text-sdc-gold-soft">
-            Design Clinic
+            Rivas VIP
           </span>
         </div>
       </div>
@@ -30,34 +31,36 @@ export default function Navbar() {
           href="#servicios"
           className="text-[15px] lg:text-[16px] font-semibold tracking-[0.14em] uppercase text-sdc-muted transition-colors duration-300 whitespace-nowrap hover:text-sdc-gold-soft"
         >
-          Servicios
+          Servicio
         </a>
         <a
-          href="#resultados"
+          href="#equipo"
           className="text-[15px] lg:text-[16px] font-semibold tracking-[0.14em] uppercase text-sdc-muted transition-colors duration-300 whitespace-nowrap hover:text-sdc-gold-soft"
         >
-          Resultados
+          Equipo
         </a>
         <a
-          href="#doctor"
+          href="#nosotros"
           className="text-[15px] lg:text-[16px] font-semibold tracking-[0.14em] uppercase text-sdc-muted transition-colors duration-300 whitespace-nowrap hover:text-sdc-gold-soft"
         >
-          El Dr.
+          Sobre nosotros
         </a>
         <a
-          href="#testimonios"
+          href="#resenas"
           className="text-[15px] lg:text-[16px] font-semibold tracking-[0.14em] uppercase text-sdc-muted transition-colors duration-300 whitespace-nowrap hover:text-sdc-gold-soft"
         >
-          Testimonios
+          Reseñas
         </a>
       </div>
 
-      <button
-        type="button"
+      <a
+        href={WHATSAPP_BOOKING_URL}
+        target="_blank"
+        rel="noopener noreferrer"
         className="font-system-pro justify-self-end md:justify-self-auto shrink-0 bg-sdc-gold text-[#0a0a0a] text-[11px] md:text-[13px] lg:text-[14px] tracking-[0.14em] uppercase py-2.5 px-5 md:px-[22px] rounded-lg font-semibold transition-colors duration-300 hover:bg-[#dcc174] shadow-[0_6px_20px_rgba(201,168,76,0.22)]"
       >
-        Agendar cita
-      </button>
+        Contacto
+      </a>
     </nav>
   );
 }

@@ -20,6 +20,11 @@
   --color-sdc-gold: #c9a84c;
   --color-sdc-gold-soft: #d4c49a;
   --color-sdc-success: #9bab9c;
+
+  /* Acento tinto / vino */
+  --color-sdc-wine: #7d1f2b;
+  --color-sdc-wine-soft: #a12f3c;
+  --color-sdc-wine-deep: #4a121b;
 }
 
 @media (prefers-color-scheme: dark) {

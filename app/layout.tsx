@@ -6,8 +6,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Smile Design Clinic",
-  description: "Odontología estética de alto nivel por el Dr. Chrystian Mejía",
+  title: "Servicio de Meseros Rivas VIP",
+  description:
+    "Coordinación de meseros y logística para eventos corporativos, bodas y banquetes de alta categoría en Guadalajara.",
 };
 
 export default function RootLayout({
