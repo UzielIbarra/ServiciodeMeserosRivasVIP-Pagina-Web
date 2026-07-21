@@ -1,33 +1,33 @@
 export default function Testimonials() {
-  const testimonials = [
+  const reviews = [
     {
       name: "Ana G.",
-      role: "Diseño de sonrisa",
-      text: '"El Dr. Mejía transformó mi sonrisa completamente. El resultado superó todas mis expectativas."',
+      role: "Boda",
+      text: '"El equipo de meseros fue impecable. Muy atentos y profesionales durante toda la boda."',
     },
     {
       name: "Ricardo M.",
-      role: "Implantes + carillas",
-      text: '"Profesionalismo y atención al detalle únicos. Llevo 3 años siendo paciente y no cambiaría nada."',
+      role: "Evento corporativo",
+      text: '"Coordinaron a la perfección la cena de nuestra empresa. Servicio puntual y de primer nivel."',
     },
     {
       name: "Sofía L.",
-      role: "Ortodoncia invisible",
-      text: '"La clínica más elegante y el mejor resultado estético que he visto. Vale cada peso invertido."',
+      role: "Banquete",
+      text: '"Personal muy capacitado y elegante. Nuestros invitados quedaron encantados con la atención."',
     },
   ];
 
   return (
-    <section id="testimonios" className="bg-[#070707] px-10 py-16 scroll-mt-[72px]">
+    <section id="resenas" className="bg-[#070707] px-10 py-16 scroll-mt-[72px]">
       <div className="font-system-pro text-[10px] font-semibold tracking-[0.28em] text-sdc-gold/90 uppercase mb-3">
-        Testimonios
+        Reseñas de Google
       </div>
       <h2 className="font-system-pro text-3xl md:text-[2rem] font-semibold tracking-tight text-sdc-cream mb-12 max-w-xl">
-        Lo que dicen nuestros pacientes
+        Lo que dicen nuestros clientes
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {testimonials.map((testi, index) => (
+        {reviews.map((review, index) => (
           <div
             key={index}
             className="bg-[#0f0d08] border border-[rgba(250,248,244,0.06)] rounded-xl p-7"
@@ -36,13 +36,13 @@ export default function Testimonials() {
               ★★★★★
             </div>
             <p className="font-system-pro text-[14px] md:text-[15px] text-sdc-body leading-relaxed mb-6 tracking-wide italic">
-              {testi.text}
+              {review.text}
             </p>
             <div className="font-system-pro text-[11px] text-sdc-gold-soft tracking-[0.14em] uppercase font-semibold">
-              {testi.name}
+              {review.name}
             </div>
             <div className="font-system-pro text-[11px] text-sdc-subtle mt-2 tracking-wide">
-              {testi.role}
+              {review.role}
             </div>
           </div>
         ))}
