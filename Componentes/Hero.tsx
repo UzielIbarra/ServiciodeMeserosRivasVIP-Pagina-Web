@@ -3,71 +3,163 @@ import { WHATSAPP_BOOKING_URL } from "../lib/contact";
 
 export default function Hero() {
   return (
-    <section className="relative bg-[#0a0a0a] px-6 md:px-16 lg:px-20 py-16 md:py-24 border-b border-[#1a1710] overflow-hidden min-h-[min(880px,92svh)] flex items-center">
+    <section
+      id="inicio"
+      className="relative flex items-center overflow-hidden bg-[#0a0a0a]"
+      style={{
+        boxSizing: "border-box",
+        minHeight: "100svh",
+        margin: "2px 2px 0",
+        padding: "clamp(4rem, 12vw, 6rem) 0",
+        border: "1px solid rgba(250, 248, 244, 0.12)",
+        borderRadius: "7px",
+      }}
+    >
 
-      {/* Fondo de mármol negro/dorado */}
+      {/* Se sirve el PNG original para evitar pérdida por conversión u optimización. */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/fondo.jpg"
+          src="/marmol.png"
           alt=""
           fill
           priority
-          quality={90}
           sizes="100vw"
+          unoptimized
           className="object-cover object-center"
         />
       </div>
 
+      <div
+        className="absolute inset-0 z-[1] pointer-events-none"
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}
+        aria-hidden
+      />
+
       {/* Capas de lectura: oscurece + tinte tinto */}
       <div
-        className="absolute inset-0 z-[1] pointer-events-none bg-gradient-to-r from-[#080604]/94 via-[#080604]/78 md:via-[#080604]/55 to-transparent md:to-[58%]"
+        className="absolute inset-0 z-[1] pointer-events-none"
+        style={{
+          backgroundImage:
+            "linear-gradient(to right, rgba(8, 6, 4, 0.58), rgba(8, 6, 4, 0.3) 34%, transparent 56%)",
+        }}
         aria-hidden
       />
       <div
-        className="absolute inset-0 z-[1] pointer-events-none bg-[radial-gradient(ellipse_at_bottom_left,rgba(125,31,43,0.28)_0%,transparent_55%)]"
+        className="absolute inset-0 z-[1] pointer-events-none bg-[radial-gradient(ellipse_at_bottom_left,rgba(125,31,43,0.14)_0%,transparent_55%)]"
         aria-hidden
       />
 
-      <div className="relative z-10 mx-auto w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div
+        className="absolute z-[2] hidden pointer-events-none lg:block"
+        style={{
+          top: "50%",
+          right: "7%",
+          width: "clamp(259px, 22.56vw, 433px)",
+          aspectRatio: "541 / 461",
+          transform: "translateY(-50%)",
+          overflow: "hidden",
+          border: "1px solid rgba(201, 168, 76, 0.3)",
+          borderRadius: "28px",
+          background:
+            "linear-gradient(145deg, rgba(5, 5, 5, 0.92), rgba(10, 8, 6, 0.78))",
+          boxShadow:
+            "0 24px 70px rgba(0, 0, 0, 0.72), inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 0 36px rgba(201, 168, 76, 0.12)",
+          backdropFilter: "blur(8px)",
+        }}
+      >
+        <Image
+          src="/logo%20arriba%20fondo.png"
+          alt="Logotipo Meseros Rivas"
+          fill
+          quality={100}
+          sizes="(max-width: 768px) 45vw, 30vw"
+          unoptimized
+          className="object-contain"
+          style={{
+            filter:
+              "drop-shadow(0 12px 26px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 18px rgba(201, 168, 76, 0.28))",
+          }}
+        />
+      </div>
 
-        {/* ── Columna Izquierda ── */}
+      <div
+        className="relative z-10 mx-auto"
+        style={{
+          width: "88%",
+          transform: "translateY(clamp(0px, 7.8vw, 80px))",
+        }}
+      >
+
         <div className="flex flex-col">
           <div
-            className="font-system-pro text-[11px] md:text-[12px] font-semibold tracking-[0.26em] text-sdc-gold/90 uppercase mb-5 animate-fade-up"
-            style={{ animationDelay: "0ms" }}
+            className="font-system-pro text-[11px] font-semibold tracking-[0.2em] text-sdc-gold/90 uppercase mb-3 animate-fade-up"
+            style={{
+              animationDelay: "0ms",
+              fontSize: "clamp(11px, 0.8vw, 15px)",
+              display: "inline-flex",
+              alignSelf: "flex-start",
+              alignItems: "center",
+              border: "1px solid rgba(212, 196, 154, 0.48)",
+              borderRadius: "999px",
+              backgroundColor: "rgba(5, 5, 5, 0.52)",
+              padding: "0.45rem 0.9rem",
+              marginBottom: "1.25rem",
+              letterSpacing: "0.1em",
+            }}
           >
-            Servicio de Meseros Rivas VIP · Guadalajara
+            Servicio de excelencia · Guadalajara
           </div>
 
           <h1
-            className="font-system-pro text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-sdc-cream leading-[1.1] mb-5 animate-fade-up drop-shadow-[0_2px_16px_rgba(0,0,0,0.85)]"
-            style={{ animationDelay: "100ms" }}
+            className="font-system-pro text-4xl font-semibold tracking-tight text-sdc-cream leading-[1.1] mb-3 animate-fade-up drop-shadow-[0_2px_16px_rgba(0,0,0,0.85)]"
+            style={{
+              animationDelay: "100ms",
+              fontSize: "clamp(2.25rem, 4vw, 4.75rem)",
+              maxWidth: "900px",
+              marginBottom: "1rem",
+              lineHeight: 1.06,
+            }}
           >
             Elegancia y servicio<br />
-            <span className="text-sdc-gold-soft font-medium">en cada copa</span>
+            <span className="font-medium">en cada copa</span>
           </h1>
 
           <p
-            className="font-system-pro text-[15px] md:text-[17px] text-sdc-body/95 leading-[1.6] mb-8 max-w-[480px] animate-fade-up tracking-wide drop-shadow-[0_1px_10px_rgba(0,0,0,0.8)]"
-            style={{ animationDelay: "200ms" }}
+            className="font-system-pro text-[15px] text-sdc-body/95 leading-[1.6] mb-5 animate-fade-up tracking-wide drop-shadow-[0_1px_10px_rgba(0,0,0,0.8)]"
+            style={{
+              animationDelay: "200ms",
+              maxWidth: "min(600px, max(42vw, 20rem))",
+              marginBottom: "1.5rem",
+              fontSize: "clamp(14px, 1.1vw, 20px)",
+              lineHeight: 1.7,
+            }}
           >
             Meseros, barra, coctelería y banquetería de alto nivel para bodas, eventos corporativos y banquetes de alta categoría.
           </p>
 
           <div
-            className="flex flex-wrap items-center gap-4 animate-fade-up"
-            style={{ animationDelay: "300ms" }}
+            className="flex flex-wrap items-center gap-3 animate-fade-up"
+            style={{ animationDelay: "300ms", gap: "0.75rem" }}
           >
             <a
               href={WHATSAPP_BOOKING_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-4 sm:gap-5"
+              className="group inline-flex items-center gap-2.5"
             >
-              <span className="font-system-pro inline-flex items-center justify-center bg-sdc-gold text-[#0a0a0a] text-[13px] sm:text-[14px] tracking-[0.14em] uppercase py-4 px-8 sm:py-[17px] sm:px-10 rounded-lg font-semibold shadow-[0_6px_22px_rgba(0,0,0,0.45)] transition-colors group-hover:bg-[#dcc174]">
+              <span
+                className="font-system-pro inline-flex items-center justify-center bg-sdc-gold text-[#0a0a0a] text-[11px] tracking-[0.12em] uppercase py-2 px-4 rounded-md font-semibold shadow-[0_6px_22px_rgba(0,0,0,0.45)] transition-colors group-hover:bg-[#dcc174]"
+                style={{
+                  fontSize: "clamp(11px, 0.9vw, 15px)",
+                  padding: "0.7rem 1.25rem",
+                }}
+              >
                 Cotizar Evento
               </span>
-              <span className="relative flex size-[52px] shrink-0 items-center justify-center sm:size-[58px] md:size-[62px] transition-transform duration-300 group-hover:scale-[1.06]">
+              <span
+                className="relative flex size-[42px] shrink-0 items-center justify-center transition-transform duration-300 group-hover:scale-[1.06]"
+                style={{ width: "clamp(28px, 2.8vw, 42px)", height: "clamp(28px, 2.8vw, 42px)" }}
+              >
                 <Image
                   src="/LOGOWHATSAPP.png"
                   alt=""
@@ -79,30 +171,50 @@ export default function Hero() {
             </a>
             <a
               href="#servicios"
-              className="font-system-pro bg-[#0e0c09]/70 text-sdc-body border border-sdc-gold/35 text-[14px] md:text-[15px] tracking-[0.14em] uppercase py-3 px-6 rounded-lg transition-colors hover:bg-sdc-gold hover:text-[#0a0a0a] hover:border-sdc-gold backdrop-blur-sm"
+              className="font-system-pro bg-[#0e0c09]/70 text-sdc-body border border-sdc-gold/35 text-[11px] tracking-[0.12em] uppercase py-2 px-3 rounded-md transition-colors hover:bg-sdc-gold hover:text-[#0a0a0a] hover:border-sdc-gold backdrop-blur-sm"
+              style={{
+                fontSize: "clamp(11px, 0.9vw, 15px)",
+                padding: "0.7rem 1rem",
+              }}
             >
               Ver servicios
             </a>
           </div>
-        </div>
 
-        {/* ── Columna derecha: imagen de marca ── */}
-        <div
-          className="flex justify-center md:justify-end animate-fade-up"
-          style={{ animationDelay: "220ms" }}
-        >
-          <div className="relative w-full max-w-[420px] md:max-w-[460px] aspect-square rounded-2xl overflow-hidden border border-[rgba(201,168,76,0.4)] shadow-[0_0_40px_rgba(0,0,0,0.55),0_0_60px_rgba(125,31,43,0.25)]">
-            <Image
-              src="/marca.jpg"
-              alt="Servicio de Meseros Rivas VIP — montaje de mesa elegante"
-              fill
-              priority
-              quality={92}
-              sizes="(max-width: 768px) 90vw, 460px"
-              className="object-cover"
+          <div
+            className="mt-8 flex flex-wrap items-center gap-5 animate-fade-up"
+            style={{ animationDelay: "400ms" }}
+            aria-label="Experiencia y eventos realizados"
+          >
+            <div className="flex items-center gap-2.5">
+              <span
+                className="font-system-pro text-sdc-gold-soft font-semibold leading-none"
+                style={{ fontSize: "clamp(1.75rem, 2.5vw, 3rem)" }}
+              >
+                6
+              </span>
+              <span className="font-system-pro text-[10px] sm:text-xs uppercase tracking-[0.08em] text-sdc-body/75 leading-tight">
+                Años de<br />experiencia
+              </span>
+            </div>
+            <span
+              className="h-10 w-px bg-[rgba(250,248,244,0.2)]"
+              aria-hidden="true"
             />
+            <div className="flex items-center gap-2.5">
+              <span
+                className="font-system-pro text-sdc-gold-soft font-semibold leading-none"
+                style={{ fontSize: "clamp(1.75rem, 2.5vw, 3rem)" }}
+              >
+                300+
+              </span>
+              <span className="font-system-pro text-[10px] sm:text-xs uppercase tracking-[0.08em] text-sdc-body/75 leading-tight">
+                Eventos<br />realizados
+              </span>
+            </div>
           </div>
         </div>
+
       </div>
     </section>
   );

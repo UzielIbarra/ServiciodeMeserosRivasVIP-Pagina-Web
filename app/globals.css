@@ -53,6 +53,65 @@ body {
 .animate-fade-up   { animation: fadeUp 0.7s ease forwards; }
 .animate-glow-pulse { animation: glowPulse 3s ease-in-out infinite; }
 
+@keyframes clientMarqueeRight {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
+}
+
+.client-marquee-track {
+  animation: clientMarqueeRight 36s linear infinite;
+  will-change: transform;
+}
+
+.client-marquee:hover .client-marquee-track {
+  animation-play-state: paused;
+}
+
+@media (max-width: 639px) {
+  .client-marquee {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    touch-action: pan-x;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .client-marquee::-webkit-scrollbar {
+    display: none;
+  }
+
+  .client-marquee:focus-visible {
+    outline: 2px solid #c9a84c;
+    outline-offset: 4px;
+  }
+
+  .client-marquee-track {
+    animation: none;
+    transform: none;
+    will-change: auto;
+  }
+
+  .client-marquee-group[aria-hidden="true"] {
+    display: none;
+  }
+
+  .client-marquee-group article {
+    scroll-snap-align: start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .client-marquee-track {
+    animation: none;
+    transform: translateX(0);
+  }
+
+  .client-marquee-group[aria-hidden="true"] {
+    display: none;
+  }
+}
+
 /* Leyendas tipo sistema / SF — stack cercano al look Apple */
 .font-system-pro {
   font-family:
