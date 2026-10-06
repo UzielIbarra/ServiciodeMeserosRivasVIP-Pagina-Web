@@ -23,7 +23,7 @@ export default function FloatingLogo() {
       </a>
 
       <a
-        href="https://www.instagram.com/serviciomeserosrivasvip/"
+        href="https://www.instagram.com/serviciodemeserosrivasvip/"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Visita nuestro Instagram"
