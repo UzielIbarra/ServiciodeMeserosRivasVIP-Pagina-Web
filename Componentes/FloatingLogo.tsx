@@ -22,9 +22,12 @@ export default function FloatingLogo() {
         />
       </a>
 
-      <div
-        aria-label="Instagram"
-        className="relative flex size-[60px] items-center justify-center overflow-hidden rounded-full border border-[#feda75] bg-[#0a0a0a] shadow-[0_0_15px_rgba(201,168,76,0.2)] opacity-90 sm:size-[68px] md:size-[46px] lg:size-[48px]"
+      <a
+        href="https://www.instagram.com/serviciomeserosrivasvip/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Visita nuestro Instagram"
+        className="relative flex size-[60px] items-center justify-center overflow-hidden rounded-full border border-[#feda75] bg-[#0a0a0a] shadow-[0_0_15px_rgba(201,168,76,0.2)] opacity-90 transition-transform duration-300 hover:scale-105 hover:opacity-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#e0bf6a] sm:size-[68px] md:size-[46px] lg:size-[48px]"
       >
         <Image
           src="/instagram_icon.png"
@@ -34,7 +37,7 @@ export default function FloatingLogo() {
           sizes="(max-width: 640px) 60px, 48px"
           className="rounded-full object-cover"
         />
-      </div>
+      </a>
     </div>
   );
 }
