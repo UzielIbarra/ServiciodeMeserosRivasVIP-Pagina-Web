@@ -53,19 +53,19 @@ export default function Hero() {
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 z-[2] hidden overflow-hidden lg:block"
       >
-        <div className="absolute right-[2%] top-[12%] h-[72%] w-[58%] rounded-full bg-[radial-gradient(ellipse,rgba(201,168,76,0.16)_0%,rgba(125,31,43,0.08)_42%,transparent_72%)] blur-3xl" />
-        <div className="absolute bottom-[4%] right-[2%] h-10 w-[56%] rounded-[50%] bg-black/75 blur-2xl" />
+        <div className="hero-waiter-backdrop absolute right-[3%] top-[8%] h-[82%] w-[57%]" />
+        <div className="hero-waiter-glow absolute right-[8%] top-[16%] h-[68%] w-[48%] rounded-full" />
+        <div className="hero-waiter-ground absolute bottom-[5%] right-[5%] h-12 w-[50%] rounded-[50%]" />
         <div
-          className="absolute right-0 top-1/2 aspect-[2400/1340] w-[min(80vw,1536px)] -translate-y-1/2"
-          style={{ filter: "drop-shadow(0 26px 24px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 22px rgba(201, 168, 76, 0.14))" }}
+          className="hero-waiter-stage absolute right-[1%] top-1/2 aspect-[2400/1340] w-[min(70vw,1160px)] -translate-y-1/2"
         >
           <Image
             src="/Mesero.png"
             alt=""
             fill
             priority
-            sizes="(max-width: 1280px) 80vw, 1536px"
-            className="object-contain object-center"
+            sizes="(max-width: 1280px) 70vw, 1160px"
+            className="hero-waiter-cutout object-contain object-center"
           />
         </div>
       </div>
