@@ -50,36 +50,24 @@ export default function Hero() {
       />
 
       <div
-        className="absolute z-[2] hidden pointer-events-none lg:block"
-        style={{
-          top: "50%",
-          right: "7%",
-          width: "clamp(259px, 22.56vw, 433px)",
-          aspectRatio: "541 / 461",
-          transform: "translateY(-50%)",
-          overflow: "hidden",
-          border: "1px solid rgba(201, 168, 76, 0.3)",
-          borderRadius: "28px",
-          background:
-            "linear-gradient(145deg, rgba(5, 5, 5, 0.92), rgba(10, 8, 6, 0.78))",
-          boxShadow:
-            "0 24px 70px rgba(0, 0, 0, 0.72), inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 0 36px rgba(201, 168, 76, 0.12)",
-          backdropFilter: "blur(8px)",
-        }}
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 z-[2] hidden overflow-hidden lg:block"
       >
-        <Image
-          src="/logo%20arriba%20fondo.png"
-          alt="Logotipo Meseros Rivas"
-          fill
-          quality={100}
-          sizes="(max-width: 768px) 45vw, 30vw"
-          unoptimized
-          className="object-contain"
-          style={{
-            filter:
-              "drop-shadow(0 12px 26px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 18px rgba(201, 168, 76, 0.28))",
-          }}
-        />
+        <div className="absolute right-[2%] top-[12%] h-[72%] w-[58%] rounded-full bg-[radial-gradient(ellipse,rgba(201,168,76,0.16)_0%,rgba(125,31,43,0.08)_42%,transparent_72%)] blur-3xl" />
+        <div className="absolute bottom-[4%] right-[2%] h-10 w-[56%] rounded-[50%] bg-black/75 blur-2xl" />
+        <div
+          className="absolute right-0 top-1/2 aspect-[2400/1340] w-[min(80vw,1536px)] -translate-y-1/2"
+          style={{ filter: "drop-shadow(0 26px 24px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 22px rgba(201, 168, 76, 0.14))" }}
+        >
+          <Image
+            src="/Mesero.png"
+            alt=""
+            fill
+            priority
+            sizes="(max-width: 1280px) 80vw, 1536px"
+            className="object-contain object-center"
+          />
+        </div>
       </div>
 
       <div
