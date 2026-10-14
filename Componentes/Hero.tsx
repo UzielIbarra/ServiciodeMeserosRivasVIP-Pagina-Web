@@ -53,19 +53,25 @@ export default function Hero() {
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 z-[2] hidden overflow-hidden lg:block"
       >
-        <div className="hero-waiter-backdrop absolute right-[3%] top-[8%] h-[82%] w-[57%]" />
-        <div className="hero-waiter-glow absolute right-[8%] top-[16%] h-[68%] w-[48%] rounded-full" />
-        <div className="hero-waiter-ground absolute bottom-[5%] right-[5%] h-12 w-[50%] rounded-[50%]" />
+        <div className="hero-waiter-backdrop absolute right-[2%] top-[5%] h-[88%] w-[61%]" />
+        <div className="hero-waiter-glow absolute right-[5%] top-[11%] h-[76%] w-[54%] rounded-full" />
+        <div className="hero-waiter-ground absolute bottom-[2%] right-[4%] h-16 w-[54%] rounded-[50%]" />
         <div
-          className="hero-waiter-stage absolute right-[1%] top-1/2 aspect-[2400/1340] w-[min(70vw,1160px)] -translate-y-1/2"
+          className="hero-waiter-stage absolute right-[1%] top-1/2 aspect-[2400/1340] w-[min(64vw,1080px)] -translate-y-1/2"
         >
           <Image
             src="/Mesero.png"
             alt=""
             fill
             priority
-            sizes="(max-width: 1280px) 70vw, 1160px"
+            sizes="(max-width: 1280px) 64vw, 1080px"
             className="hero-waiter-cutout object-contain object-center"
+            style={{
+              maskImage:
+                "linear-gradient(to bottom, transparent 0%, black 7%, black 92%, transparent 100%)",
+              WebkitMaskImage:
+                "linear-gradient(to bottom, transparent 0%, black 7%, black 92%, transparent 100%)",
+            }}
           />
         </div>
       </div>

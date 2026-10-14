@@ -5,65 +5,105 @@ export default function Contact() {
   return (
     <section
       id="contacto"
-      className="grid scroll-mt-[72px] grid-cols-1 items-center gap-8 border-y border-[rgba(250,248,244,0.06)] bg-[#0a0a0a] px-5 py-14 sm:px-8 md:grid-cols-2 md:gap-12 md:px-10 md:py-16"
+      aria-labelledby="contacto-titulo"
+      className="relative isolate scroll-mt-[72px] overflow-hidden border-y border-[#c9a84c]/15 bg-[#090807] px-5 py-16 sm:px-8 sm:py-20 lg:px-12 lg:py-24"
     >
-      <div className="space-y-4">
-        <h2 className="font-system-pro text-3xl md:text-[2rem] font-semibold tracking-tight text-sdc-cream">
-          ¿Listo para tu evento?
-        </h2>
-        <p className="font-system-pro text-[14px] md:text-[15px] leading-relaxed text-sdc-muted tracking-wide max-w-md">
-          Contáctanos directamente por WhatsApp y cotiza el servicio de meseros para tu evento. Te respondemos a la brevedad.
-        </p>
-      </div>
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_83%_12%,rgba(201,168,76,0.12),transparent_38%),linear-gradient(128deg,transparent_48%,rgba(125,31,43,0.055)_100%)]"
+      />
+      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
+        <div className="max-w-xl">
+          <div className="mb-6 flex items-center gap-3">
+            <span aria-hidden="true" className="h-px w-8 bg-[#c9a84c]/80" />
+            <p className="font-system-pro text-[10px] font-semibold uppercase tracking-[0.28em] text-[#c9a84c]">
+              El primer paso
+            </p>
+          </div>
+          <h2
+            id="contacto-titulo"
+            className="font-system-pro text-[2.5rem] font-medium leading-[1.03] tracking-[-0.055em] text-[#f0e8d8] sm:text-5xl lg:text-[3.4rem]"
+          >
+            Tu evento merece
+            <span className="mt-1 block font-normal text-[#c9a84c]">
+              un servicio a su altura.
+            </span>
+          </h2>
+          <p className="mt-6 max-w-md font-system-pro text-sm leading-7 tracking-[0.015em] text-[#a89070] sm:text-[15px]">
+            Cuéntanos qué estás organizando. Te ayudamos a encontrar el servicio
+            ideal para recibir a tus invitados como merecen.
+          </p>
+        </div>
 
-      <div className="flex flex-col gap-4">
-        <a
-          href={WHATSAPP_BOOKING_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-system-pro flex items-center gap-4 rounded-xl border border-[rgba(155,171,156,0.28)] bg-[#0a100e]/85 px-5 py-4 transition-colors hover:border-[rgba(155,171,156,0.45)] hover:bg-[#0c1412]/95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#e0bf6a] backdrop-blur-sm"
-        >
-          <Image
-            src="/LOGOWHATSAPP.png"
-            alt=""
-            width={40}
-            height={40}
-            className="size-10 shrink-0 object-contain"
-          />
-          <div>
-            <strong className="block text-[14px] md:text-[15px] text-sdc-cream font-semibold tracking-wide">
-              Contactar por WhatsApp
-            </strong>
-            <span className="text-[12px] md:text-[13px] text-sdc-muted tracking-wide">
-              Respuesta en menos de 24 hrs
+        <div className="border-y border-[#c9a84c]/20">
+          <a
+            href={WHATSAPP_BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex min-h-28 items-center gap-4 py-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#e0bf6a] sm:gap-6 sm:py-7"
+          >
+            <span className="flex size-12 shrink-0 items-center justify-center rounded-full border border-[#c9a84c]/30 bg-[#0f0d08] transition-colors duration-300 group-hover:border-[#c9a84c]/65 group-hover:bg-[#17120a] sm:size-14">
+              <Image
+                src="/LOGOWHATSAPP.png"
+                alt=""
+                width={40}
+                height={40}
+                className="size-7 object-contain sm:size-8"
+              />
             </span>
-          </div>
-        </a>
+            <span className="min-w-0 flex-1">
+              <span className="mb-1 block font-system-pro text-[9px] font-semibold uppercase tracking-[0.22em] text-[#7a6a50]">
+                Atención directa
+              </span>
+              <strong className="block font-system-pro text-base font-medium tracking-[-0.02em] text-[#f0e8d8] sm:text-lg">
+                Hablemos de tu evento
+              </strong>
+              <span className="mt-1 block font-system-pro text-xs tracking-wide text-[#a89070]">
+                Respondemos en menos de 24 horas
+              </span>
+            </span>
+            <span
+              aria-hidden="true"
+              className="flex size-10 shrink-0 items-center justify-center rounded-full border border-[#c9a84c]/20 text-[#e0bf6a] transition-all duration-300 group-hover:translate-x-1 group-hover:border-[#c9a84c]/60 group-hover:bg-[#c9a84c]/10"
+            >
+              <svg viewBox="0 0 20 20" fill="none" className="size-4">
+                <path
+                  d="M3.75 10h12.5m-5-5 5 5-5 5"
+                  stroke="currentColor"
+                  strokeWidth="1.3"
+                />
+              </svg>
+            </span>
+          </a>
 
-        <div className="grid grid-cols-3 gap-2 sm:gap-3">
-          <div className="rounded-xl border border-[rgba(250,248,244,0.06)] bg-[#0f0d08] px-2 py-3 text-center sm:px-3 sm:py-4">
-            <span className="font-system-pro mb-1 block text-[11px] font-semibold tracking-wide text-sdc-gold-soft sm:text-[14px]">
-              Todo Jalisco
-            </span>
-            <span className="font-system-pro text-[9px] uppercase tracking-[0.06em] text-sdc-subtle sm:text-[11px] sm:tracking-wide">
-              Cobertura
-            </span>
-          </div>
-          <div className="rounded-xl border border-[rgba(250,248,244,0.06)] bg-[#0f0d08] px-2 py-3 text-center sm:px-3 sm:py-4">
-            <span className="font-system-pro mb-1 block text-[11px] font-semibold tracking-wide text-sdc-gold-soft sm:text-[14px]">
-              Eventos
-            </span>
-            <span className="font-system-pro text-[9px] leading-4 text-sdc-subtle sm:text-[11px] sm:tracking-wide">
-              Bodas · Empresas · Banquetes
-            </span>
-          </div>
-          <div className="rounded-xl border border-[rgba(250,248,244,0.06)] bg-[#0f0d08] px-2 py-3 text-center sm:px-3 sm:py-4">
-            <span className="font-system-pro mb-1 block text-[11px] font-semibold tracking-wide text-sdc-gold-soft sm:text-[14px]">
-              Todo el año
-            </span>
-            <span className="font-system-pro text-[9px] uppercase tracking-[0.06em] text-sdc-subtle sm:text-[11px] sm:tracking-wide">
-              Disponibilidad
-            </span>
+          <div className="grid grid-cols-3 border-t border-[#f0e8d8]/[0.08] py-5 sm:py-6">
+            <div className="pr-2 sm:pr-4">
+              <span aria-hidden="true" className="mb-3 block h-px w-5 bg-[#c9a84c]/60" />
+              <span className="block font-system-pro text-xs font-medium tracking-wide text-[#f0e8d8] sm:text-sm">
+                Jalisco
+              </span>
+              <span className="mt-1 block font-system-pro text-[9px] uppercase tracking-[0.12em] text-[#7a6a50] sm:text-[10px]">
+                Cobertura
+              </span>
+            </div>
+            <div className="border-x border-[#f0e8d8]/[0.08] px-3 sm:px-5">
+              <span aria-hidden="true" className="mb-3 block h-px w-5 bg-[#c9a84c]/60" />
+              <span className="block font-system-pro text-xs font-medium tracking-wide text-[#f0e8d8] sm:text-sm">
+                Todo el año
+              </span>
+              <span className="mt-1 block font-system-pro text-[9px] uppercase tracking-[0.12em] text-[#7a6a50] sm:text-[10px]">
+                Disponibilidad
+              </span>
+            </div>
+            <div className="pl-3 sm:pl-5">
+              <span aria-hidden="true" className="mb-3 block h-px w-5 bg-[#c9a84c]/60" />
+              <span className="block font-system-pro text-xs font-medium tracking-wide text-[#f0e8d8] sm:text-sm">
+                A tu medida
+              </span>
+              <span className="mt-1 block font-system-pro text-[9px] uppercase tracking-[0.12em] text-[#7a6a50] sm:text-[10px]">
+                Cada ocasión
+              </span>
+            </div>
           </div>
         </div>
       </div>
