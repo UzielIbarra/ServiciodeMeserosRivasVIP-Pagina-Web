@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { WHATSAPP_BOOKING_URL } from "../lib/contact";
 
@@ -31,7 +33,7 @@ export default function Navbar() {
         </div>
       </a>
 
-      <div className="hidden md:flex justify-center items-center gap-x-7 lg:gap-x-10 font-system-pro md:px-6">
+      <div className="hidden md:flex justify-center items-center gap-x-4 lg:gap-x-8 font-system-pro md:px-6">
         <a
           href="#servicios"
           className="rounded-sm text-xs font-medium tracking-[0.08em] text-sdc-body transition-colors duration-300 whitespace-nowrap hover:text-sdc-gold-soft focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#e0bf6a] lg:text-sm"
@@ -42,7 +44,14 @@ export default function Navbar() {
           href="#nosotros"
           className="rounded-sm text-xs font-medium tracking-[0.08em] text-sdc-body transition-colors duration-300 whitespace-nowrap hover:text-sdc-gold-soft focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#e0bf6a] lg:text-sm"
         >
-          Sobre nosotros
+          Sobre Nosotros
+        </a>
+        <a
+          href="#galeria"
+          onClick={() => window.dispatchEvent(new Event("open-event-gallery"))}
+          className="rounded-sm text-xs font-medium tracking-[0.08em] text-sdc-body transition-colors duration-300 whitespace-nowrap hover:text-sdc-gold-soft focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#e0bf6a] lg:text-sm"
+        >
+          Galería
         </a>
         <a
           href="#resenas"

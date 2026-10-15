@@ -79,28 +79,28 @@ export default function Contact() {
           <div className="grid grid-cols-3 border-t border-[#f0e8d8]/[0.08] py-5 sm:py-6">
             <div className="pr-2 sm:pr-4">
               <span aria-hidden="true" className="mb-3 block h-px w-5 bg-[#c9a84c]/60" />
-              <span className="block font-system-pro text-xs font-medium tracking-wide text-[#f0e8d8] sm:text-sm">
+              <span className="block font-serif text-sm font-medium tracking-normal text-[#f0e8d8] sm:text-base">
                 Jalisco
               </span>
-              <span className="mt-1 block font-system-pro text-[9px] uppercase tracking-[0.12em] text-[#7a6a50] sm:text-[10px]">
+              <span className="mt-1 block font-serif text-[10px] uppercase tracking-[0.12em] text-[#7a6a50]">
                 Cobertura
               </span>
             </div>
             <div className="border-x border-[#f0e8d8]/[0.08] px-3 sm:px-5">
               <span aria-hidden="true" className="mb-3 block h-px w-5 bg-[#c9a84c]/60" />
-              <span className="block font-system-pro text-xs font-medium tracking-wide text-[#f0e8d8] sm:text-sm">
+              <span className="block font-serif text-sm font-medium tracking-normal text-[#f0e8d8] sm:text-base">
                 Todo el año
               </span>
-              <span className="mt-1 block font-system-pro text-[9px] uppercase tracking-[0.12em] text-[#7a6a50] sm:text-[10px]">
+              <span className="mt-1 block font-serif text-[10px] uppercase tracking-[0.12em] text-[#7a6a50]">
                 Disponibilidad
               </span>
             </div>
             <div className="pl-3 sm:pl-5">
               <span aria-hidden="true" className="mb-3 block h-px w-5 bg-[#c9a84c]/60" />
-              <span className="block font-system-pro text-xs font-medium tracking-wide text-[#f0e8d8] sm:text-sm">
+              <span className="block font-serif text-sm font-medium tracking-normal text-[#f0e8d8] sm:text-base">
                 A tu medida
               </span>
-              <span className="mt-1 block font-system-pro text-[9px] uppercase tracking-[0.12em] text-[#7a6a50] sm:text-[10px]">
+              <span className="mt-1 block font-serif text-[10px] uppercase tracking-[0.12em] text-[#7a6a50]">
                 Cada ocasión
               </span>
             </div>
